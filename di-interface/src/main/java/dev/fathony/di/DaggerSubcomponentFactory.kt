@@ -1,0 +1,3 @@
+package dev.fathony.di
+
+interface DaggerSubcomponentFactory
