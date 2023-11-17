@@ -14,7 +14,7 @@ class MyApplication : Application(), DaggerComponentOwner, HasInjector {
 
     private lateinit var _component: ApplicationComponent
 
-    override val component: DaggerComponent<*> get() = _component
+    override val component: DaggerComponent<*> get() = _component.legacyInjector()
 
     @Inject
     lateinit var client: Client
