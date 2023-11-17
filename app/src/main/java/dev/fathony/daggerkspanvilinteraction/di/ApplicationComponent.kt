@@ -18,13 +18,22 @@ import javax.inject.Singleton
     modules = [
         ApplicationModule::class,
         FeatureModule::class,
-        MigrationModule::class,
     ]
 )
-interface ApplicationComponent :
-    DaggerComponent<MyApplication> {
+abstract class ApplicationComponent :
+    DaggerComponent<MyApplication>,
+    MainActivityComponentFactory,
+    FeatureBActivityComponentFactory {
 
-    fun legacyInjector(): MyApplicationDaggerComponent
+    abstract fun mainActivityComponentFactory(): MainActivityComponent.Factory
+
+    override fun createMainActivityComponent(activity: MainActivity): MainActivityComponent =
+        mainActivityComponentFactory().create(activity)
+
+    abstract fun featureBActivityComponentFactory(): FeatureBActivityComponent.Factory
+
+    override fun createFeatureBActivityComponent(activity: FeatureBActivity): FeatureBActivityComponent =
+        featureBActivityComponentFactory().create(activity)
 
     @Component.Factory
     interface Factory {
