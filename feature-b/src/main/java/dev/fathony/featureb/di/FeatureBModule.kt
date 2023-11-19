@@ -13,5 +13,5 @@ interface FeatureBModule {
 
     @Singleton
     @Binds
-    fun DefaultFeatureBNavigator.binds(): FeatureBNavigator
+    fun bindsDefaultFeatureBNavigator(instance: DefaultFeatureBNavigator): FeatureBNavigator
 }

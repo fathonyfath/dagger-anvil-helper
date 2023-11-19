@@ -29,6 +29,7 @@
             <option value="$PROJECT_DIR$/anvil-helper/processor" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/buildSrc" />
+            <option value="$PROJECT_DIR$/common-scopes" />
             <option value="$PROJECT_DIR$/di-interface" />
             <option value="$PROJECT_DIR$/di-scopes" />
             <option value="$PROJECT_DIR$/feature-a" />

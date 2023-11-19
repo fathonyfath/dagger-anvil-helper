@@ -1,6 +1,4 @@
-package dev.fathony.daggerkspanvilinteraction.di.scope
-
-abstract class MyApplicationScope private constructor()
+package dev.fathony.daggerkspanvilinteraction.di.scopes
 
 abstract class SampleActivityScope private constructor()
 

@@ -51,6 +51,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 
+    implementation(project(":common-scopes"))
     implementation(project(":feature-a-interface"))
     implementation(project(":feature-a"))
     implementation(project(":time-provider-interface"))

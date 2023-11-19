@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":common-scopes")
+
+
 pluginManagement {
     repositories {
         google()

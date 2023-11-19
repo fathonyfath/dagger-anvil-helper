@@ -4,15 +4,14 @@ import android.app.Application
 import com.squareup.anvil.annotations.MergeComponent
 import dagger.BindsInstance
 import dagger.Component
-import dev.fathony.anvil.helper.api.DispatchingInjector
+import dev.fathony.commonscopes.ApplicationScope
 import dev.fathony.daggerkspanvilinteraction.MyApplication
-import dev.fathony.daggerkspanvilinteraction.di.scope.MyApplicationScope
 import dev.fathony.di.DaggerComponent
 import javax.inject.Singleton
 
 @Singleton
 @MergeComponent(
-    scope = MyApplicationScope::class,
+    scope = ApplicationScope::class,
     modules = [
         ApplicationModule::class,
         FeatureModule::class,

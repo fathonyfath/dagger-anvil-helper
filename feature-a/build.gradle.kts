@@ -4,6 +4,7 @@ import dev.fathony.daggerapply.daggerApply
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("com.squareup.anvil")
 }
 
 apply<DaggerApplyPlugin>()
@@ -40,13 +41,21 @@ android {
 dependencies {
     implementation(project(":feature-a-interface"))
 
+    implementation(project(":common-scopes"))
     implementation(project(":time-provider-interface"))
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    implementation("dev.fathony.anvil-helper:api")
+    anvil("dev.fathony.anvil-helper:processor")
 }
 
 daggerApply {
     applyScopes.set(true)
+}
+
+anvil {
+    generateDaggerFactories.set(true)
 }

@@ -6,16 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import dev.fathony.anvil.helper.api.DefineEntryPoint
 import dev.fathony.anvil.helper.api.DispatchingInjector
 import dev.fathony.anvil.helper.api.HasInjector
+import dev.fathony.commonscopes.ApplicationScope
 import dev.fathony.daggerkspanvilinteraction.Client
 import dev.fathony.daggerkspanvilinteraction.MyApplication
 import dev.fathony.daggerkspanvilinteraction.R
-import dev.fathony.daggerkspanvilinteraction.di.scope.MyApplicationScope
-import dev.fathony.daggerkspanvilinteraction.di.scope.SampleActivityScope
+import dev.fathony.daggerkspanvilinteraction.di.scopes.SampleActivityScope
 import dev.fathony.di.scope.ActivityScope
 import javax.inject.Inject
 
 @ActivityScope
-@DefineEntryPoint(SampleActivityScope::class, MyApplicationScope::class)
+@DefineEntryPoint(SampleActivityScope::class, ApplicationScope::class)
 class SampleActivity : AppCompatActivity() {
 
     @Inject

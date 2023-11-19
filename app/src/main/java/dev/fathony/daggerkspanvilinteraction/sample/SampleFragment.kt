@@ -11,8 +11,8 @@ import dev.fathony.anvil.helper.api.DispatchingInjector
 import dev.fathony.anvil.helper.api.HasInjector
 import dev.fathony.daggerkspanvilinteraction.Client
 import dev.fathony.daggerkspanvilinteraction.databinding.FragmentSampleBinding
-import dev.fathony.daggerkspanvilinteraction.di.scope.SampleActivityScope
-import dev.fathony.daggerkspanvilinteraction.di.scope.SampleFragmentScope
+import dev.fathony.daggerkspanvilinteraction.di.scopes.SampleActivityScope
+import dev.fathony.daggerkspanvilinteraction.di.scopes.SampleFragmentScope
 import dev.fathony.di.scope.FragmentScope
 import javax.inject.Inject
 
