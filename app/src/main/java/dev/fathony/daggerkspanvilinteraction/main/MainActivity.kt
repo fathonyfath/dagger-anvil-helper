@@ -1,11 +1,12 @@
 package dev.fathony.daggerkspanvilinteraction.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import dev.fathony.daggerkspanvilinteraction.Client
-import dev.fathony.daggerkspanvilinteraction.R
+import dev.fathony.daggerkspanvilinteraction.sample.SampleActivity
 import dev.fathony.daggerkspanvilinteraction.databinding.ActivityMainBinding
 import dev.fathony.daggerkspanvilinteraction.main.di.MainActivityComponentFactory
 import dev.fathony.di.DaggerComponent
@@ -48,6 +49,10 @@ class MainActivity : AppCompatActivity(), DaggerComponentOwner {
 
         binding.navigationButton.setOnClickListener {
             startActivity(featureBNavigator.createIntent(this))
+        }
+
+        binding.sample.setOnClickListener {
+            startActivity(Intent(this, SampleActivity::class.java))
         }
     }
 }

@@ -20,6 +20,12 @@ internal inline fun ClassReference.checkClassIsPublic(message: () -> String) {
 @OptIn(ExperimentalAnvilApi::class)
 internal fun ClassReference.checkDefineEntryPointRequirement() {
     val daggerScopeCount = annotations.count { it.isDaggerScope() }
+    if (daggerScopeCount == 0) {
+        throw AnvilCompilationExceptionClassReference(
+            message = "Classes annotated with @${DefineEntryPointFqName.shortName()} have to be annotated with a @Scope.",
+            classReference = this
+        )
+    }
     if (daggerScopeCount > 1) {
         throw AnvilCompilationExceptionClassReference(
             message = "Classes annotated with @${DefineEntryPointFqName.shortName()} may not use more " +

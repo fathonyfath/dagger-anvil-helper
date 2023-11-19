@@ -16,11 +16,17 @@
         android:layout_height="wrap_content"
         android:text="Navigate to Feature B!" />
 
+    <Button
+        android:id="@+id/sample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample Activity" />
+
     <androidx.constraintlayout.helper.widget.Flow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:constraint_referenced_ids="button,navigation_button"
+        app:constraint_referenced_ids="button,navigation_button,sample"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

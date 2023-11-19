@@ -2,8 +2,8 @@ package dev.fathony.daggerkspanvilinteraction
 
 import android.app.Application
 import android.util.Log
-import dev.fathony.anvil.helper.api.EntryPointFactories
 import dev.fathony.anvil.helper.api.HasInjector
+import dev.fathony.anvil.helper.api.DispatchingInjector
 import dev.fathony.daggerkspanvilinteraction.di.ApplicationComponent
 import dev.fathony.daggerkspanvilinteraction.di.DaggerApplicationComponent
 import dev.fathony.di.DaggerComponent
@@ -19,13 +19,18 @@ class MyApplication : Application(), DaggerComponentOwner, HasInjector {
     @Inject
     lateinit var client: Client
 
-    override fun injectors(): EntryPointFactories = emptyMap()
+    @Inject
+    lateinit var dispatchingInjector: DispatchingInjector<Any>
+
+    override fun injector(): DispatchingInjector<Any> = dispatchingInjector
 
     override fun onCreate() {
         super.onCreate()
 
         _component = DaggerApplicationComponent.factory().create(this)
         _component.inject(this)
+
+        Log.d("Factories", "${this::class.java.simpleName}: ${dispatchingInjector.printFactories()}")
 
         Log.d("MyApplication", "client: $client")
     }

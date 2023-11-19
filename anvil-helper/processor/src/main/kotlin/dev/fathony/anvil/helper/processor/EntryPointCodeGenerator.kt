@@ -23,6 +23,7 @@ import com.squareup.kotlinpoet.KModifier
 import com.squareup.kotlinpoet.ParameterSpec
 import com.squareup.kotlinpoet.ParameterizedTypeName.Companion.parameterizedBy
 import com.squareup.kotlinpoet.STAR
+import com.squareup.kotlinpoet.TypeName
 import com.squareup.kotlinpoet.TypeSpec
 import com.squareup.kotlinpoet.asClassName
 import com.squareup.kotlinpoet.metadata.KotlinPoetMetadataPreview
@@ -75,6 +76,7 @@ class EntryPointCodeGenerator : CodeGenerator {
                 val defineEntryPointAnnotation = clazz
                     .annotations
                     .first { it.fqName == DefineEntryPointFqName }
+                val daggerScope = clazz.annotations.first { it.isDaggerScope() }
                 val scope = defineEntryPointAnnotation.scope()
                 val parentScope: ClassReference? = defineEntryPointAnnotation.parentScopeOrNull()
 
@@ -102,7 +104,11 @@ class EntryPointCodeGenerator : CodeGenerator {
                                         .addAnnotation(BindsInstance::class)
                                         .build()
                                 )
-                                .returns(ClassName.bestGuess(entryPointClassName))
+                                .returns(
+                                    EntryPoint::class.asClassName().parameterizedBy(
+                                        clazz.asClassName()
+                                    )
+                                )
                                 .build()
                         )
 
@@ -147,7 +153,7 @@ class EntryPointCodeGenerator : CodeGenerator {
                                 .addParameter(
                                     ParameterSpec.builder(
                                         "factory",
-                                        ClassName.bestGuess("Factory")
+                                        ClassName.bestGuess(GeneratedEntryPointFactoryName)
                                     ).build()
                                 )
                                 .returns(
@@ -171,15 +177,11 @@ class EntryPointCodeGenerator : CodeGenerator {
                     .addSuperinterface(
                         EntryPoint::class.asClassName().parameterizedBy(clazz.asClassName())
                     )
-                    .addAnnotation(scope.asClassName())
+                    .addAnnotation(daggerScope.toAnnotationSpec())
                     .addAnnotation(componentAnnotation)
                     .addType(entryPointFactoryInterfaceBuilder.build())
                     .run {
-                        if (bindingModuleInterfaceBuilder != null) {
-                            addType(bindingModuleInterfaceBuilder.build())
-                        } else {
-                            this
-                        }
+                        bindingModuleInterfaceBuilder?.let { addType(it.build()) } ?: this
                     }
 
                 val content = FileSpec.buildFile(generatedPackageName, entryPointClassName) {
