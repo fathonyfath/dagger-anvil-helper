@@ -1,6 +1,6 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":common-scopes")
+include(":feature-counter")
 
 
 pluginManagement {
@@ -29,3 +29,6 @@ include(":time-provider")
 include(":di-scopes")
 include(":feature-b")
 include(":feature-b-interface")
+include(":viewmodel-factory")
+include(":common-scopes")
+include(":feature-counter-interface")

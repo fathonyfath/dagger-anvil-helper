@@ -7,11 +7,15 @@ import dev.fathony.di.scope.ActivityScope
 import dev.fathony.featureb.FeatureBActivity
 
 @ActivityScope
-@Subcomponent
+@Subcomponent(
+    modules = [
+        FeatureBActivityModule::class,
+    ]
+)
 interface FeatureBActivityComponent : DaggerComponent<FeatureBActivity> {
 
     @Subcomponent.Factory
     interface Factory {
-        fun create(@BindsInstance activity: FeatureBActivity) : FeatureBActivityComponent
+        fun create(@BindsInstance activity: FeatureBActivity): FeatureBActivityComponent
     }
 }

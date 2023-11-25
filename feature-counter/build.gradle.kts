@@ -2,26 +2,22 @@ import dev.fathony.daggerapply.DaggerApplyPlugin
 import dev.fathony.daggerapply.daggerApply
 
 plugins {
-    id("com.android.application")
+    id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp")
     id("com.squareup.anvil")
 }
 
 apply<DaggerApplyPlugin>()
 
 android {
-    namespace = "dev.fathony.daggerkspanvilinteraction"
+    namespace = "dev.fathony.featureb"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "dev.fathony.daggerkspanvilinteraction"
         minSdk = 21
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -40,26 +36,18 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:1.10.1")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
     implementation(project(":common-scopes"))
-    implementation(project(":feature-a-interface"))
-    implementation(project(":feature-a"))
-    implementation(project(":time-provider-interface"))
-    implementation(project(":time-provider"))
-    implementation(project(":feature-b-interface"))
-    implementation(project(":feature-b"))
     implementation(project(":feature-counter-interface"))
-    implementation(project(":feature-counter"))
+    implementation(project(":viewmodel-factory"))
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.activity:activity-ktx:1.7.2")
+    implementation("com.google.android.material:material:1.9.0")
 
     implementation("dev.fathony.anvil-helper:api")
     anvil("dev.fathony.anvil-helper:processor")
@@ -70,6 +58,7 @@ dependencies {
 }
 
 daggerApply {
-    applyProcessor.set(true)
+    applyScopes.set(true)
     applyAndroidHelper.set(true)
+    applyProcessor.set(true)
 }
