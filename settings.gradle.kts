@@ -1,5 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":multiscope-binding-interface")
+
+
+include(":multiscope-binding")
+
+
 include(":feature-counter")
 
 

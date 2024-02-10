@@ -1,14 +1,10 @@
-import dev.fathony.daggerapply.DaggerApplyPlugin
-
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
 }
 
-apply<DaggerApplyPlugin>()
-
 android {
-    namespace = "dev.fathony.di"
+    namespace = "dev.fathony.multiscopebinding.contract"
     compileSdk = 33
 
     defaultConfig {
@@ -37,8 +33,9 @@ android {
 }
 
 dependencies {
-    api(libs.androidx.fragmentKtx)
-
+    implementation(libs.androidx.coreKtx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.google.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso)

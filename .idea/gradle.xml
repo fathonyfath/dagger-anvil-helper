@@ -41,6 +41,8 @@
             <option value="$PROJECT_DIR$/feature-b-interface" />
             <option value="$PROJECT_DIR$/feature-counter" />
             <option value="$PROJECT_DIR$/feature-counter-interface" />
+            <option value="$PROJECT_DIR$/multiscope-binding" />
+            <option value="$PROJECT_DIR$/multiscope-binding-interface" />
             <option value="$PROJECT_DIR$/time-provider" />
             <option value="$PROJECT_DIR$/time-provider-interface" />
             <option value="$PROJECT_DIR$/viewmodel-factory" />

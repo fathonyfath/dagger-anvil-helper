@@ -1,14 +1,16 @@
 import dev.fathony.daggerapply.DaggerApplyPlugin
+import dev.fathony.daggerapply.daggerApply
 
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id("com.squareup.anvil")
 }
 
 apply<DaggerApplyPlugin>()
 
 android {
-    namespace = "dev.fathony.di"
+    namespace = "dev.fathony.multiscopebinding"
     compileSdk = 33
 
     defaultConfig {
@@ -37,9 +39,20 @@ android {
 }
 
 dependencies {
-    api(libs.androidx.fragmentKtx)
+    implementation(libs.androidx.coreKtx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.google.material)
 
+    implementation(libs.anvilHelper.api)
+    anvil(libs.anvilHelper.processor)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso)
 }
+
+daggerApply {
+    applyScopes.set(true)
+    applyAndroidHelper.set(true)
+    applyProcessor.set(true)
+} 

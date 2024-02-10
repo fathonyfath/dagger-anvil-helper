@@ -42,19 +42,19 @@ dependencies {
     implementation(project(":common-scopes"))
     implementation(project(":feature-counter-interface"))
     implementation(project(":viewmodel-factory"))
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2")
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("androidx.activity:activity-ktx:1.7.2")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation(libs.androidx.lifecycle.viewmodelKtx)
+    implementation(libs.androidx.lifecycle.viewModelSavedState)
+    implementation(libs.androidx.coreKtx)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.activityKtx)
+    implementation(libs.google.material)
 
-    implementation("dev.fathony.anvil-helper:api")
-    anvil("dev.fathony.anvil-helper:processor")
+    implementation(libs.anvilHelper.api)
+    anvil(libs.anvilHelper.processor)
 
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.test.junit)
+    androidTestImplementation(libs.androidx.test.espresso)
 }
 
 daggerApply {
