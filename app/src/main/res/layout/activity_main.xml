@@ -21,12 +21,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sample Activity" />
+    
+    <Button
+        android:id="@+id/multiscope_binding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multi-scope Binding" />
 
     <androidx.constraintlayout.helper.widget.Flow
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:constraint_referenced_ids="button,navigation_button,sample"
+        app:constraint_referenced_ids="button,navigation_button,sample,multiscope_binding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

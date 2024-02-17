@@ -39,7 +39,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":common-scopes"))
     implementation(project(":feature-counter-interface"))
     implementation(project(":viewmodel-factory"))
     implementation(libs.androidx.lifecycle.viewmodelKtx)
@@ -61,4 +60,5 @@ daggerApply {
     applyScopes.set(true)
     applyAndroidHelper.set(true)
     applyProcessor.set(true)
+    applyCommonScopes.set(true)
 }

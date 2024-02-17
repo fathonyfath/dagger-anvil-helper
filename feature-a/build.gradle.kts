@@ -41,7 +41,6 @@ android {
 dependencies {
     implementation(project(":feature-a-interface"))
 
-    implementation(project(":common-scopes"))
     implementation(project(":time-provider-interface"))
 
     testImplementation(libs.junit)
@@ -54,6 +53,7 @@ dependencies {
 
 daggerApply {
     applyScopes.set(true)
+    applyCommonScopes.set(true)
 }
 
 anvil {

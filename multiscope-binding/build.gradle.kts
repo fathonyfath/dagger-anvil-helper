@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":multiscope-binding-interface"))
     implementation(libs.androidx.coreKtx)
     implementation(libs.androidx.appcompat)
     implementation(libs.google.material)
@@ -55,4 +56,5 @@ daggerApply {
     applyScopes.set(true)
     applyAndroidHelper.set(true)
     applyProcessor.set(true)
+    applyCommonScopes.set(true)
 } 

@@ -1,6 +1,5 @@
 package dev.fathony.timeprovider
 
-import dev.fathony.di.scope.ActivityScope
 import dev.fathony.timeprovider.contract.TimeProvider
 import java.util.Calendar
 import javax.inject.Inject

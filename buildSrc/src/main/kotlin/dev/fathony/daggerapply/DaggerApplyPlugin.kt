@@ -10,9 +10,10 @@ import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.project
 
 interface DaggerApplyPluginExtension {
-    abstract val applyProcessor: Property<Boolean>
-    abstract val applyScopes: Property<Boolean>
-    abstract val applyAndroidHelper: Property<Boolean>
+    val applyProcessor: Property<Boolean>
+    val applyScopes: Property<Boolean>
+    val applyCommonScopes: Property<Boolean>
+    val applyAndroidHelper: Property<Boolean>
 }
 
 class DaggerApplyPlugin : Plugin<Project> {
@@ -20,6 +21,7 @@ class DaggerApplyPlugin : Plugin<Project> {
         val extension = project.extensions.create<DaggerApplyPluginExtension>("daggerApply")
         extension.applyProcessor.convention(false)
         extension.applyScopes.convention(false)
+        extension.applyCommonScopes.convention(false)
         extension.applyAndroidHelper.convention(false)
 
         project.apply(plugin = "kotlin-kapt")
@@ -52,6 +54,15 @@ class DaggerApplyPlugin : Plugin<Project> {
                     }
                 }
             implementation(diScopes)
+
+            val anvilScopes = extension.applyCommonScopes.mapKt { value ->
+                return@mapKt if (value == true) {
+                    project(":common-scopes")
+                } else {
+                    null
+                }
+            }
+            implementation(anvilScopes)
 
             val diInterface = extension.applyAndroidHelper.mapKt { value ->
                 return@mapKt if (value == true) {

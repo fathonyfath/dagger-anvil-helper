@@ -33,7 +33,7 @@ android {
 }
 
 dependencies {
-    api(libs.androidx.activityKtx)
+    api(libs.androidx.fragmentKtx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso)

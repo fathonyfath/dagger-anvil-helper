@@ -50,8 +50,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintLayout)
     implementation(libs.google.material)
-
-    implementation(project(":common-scopes"))
+    
     implementation(project(":feature-a-interface"))
     implementation(project(":feature-a"))
     implementation(project(":time-provider-interface"))
@@ -60,6 +59,8 @@ dependencies {
     implementation(project(":feature-b"))
     implementation(project(":feature-counter-interface"))
     implementation(project(":feature-counter"))
+    implementation(project(":multiscope-binding-interface"))
+    implementation(project(":multiscope-binding"))
 
     implementation(libs.anvilHelper.api)
     anvil(libs.anvilHelper.processor)
@@ -72,4 +73,5 @@ dependencies {
 daggerApply {
     applyProcessor.set(true)
     applyAndroidHelper.set(true)
+    applyCommonScopes.set(true)
 }

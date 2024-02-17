@@ -14,6 +14,7 @@ import dev.fathony.di.DaggerComponentOwner
 import dev.fathony.di.applicationComponent
 import dev.fathony.featurea.contract.RandomNumberGenerator
 import dev.fathony.featureb.contract.FeatureBNavigator
+import dev.fathony.multiscopebinding.contract.MultiScopeBindingActivityIntentFactory
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity(), DaggerComponentOwner {
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity(), DaggerComponentOwner {
 
     @Inject
     lateinit var featureBNavigator: FeatureBNavigator
+    
+    @Inject
+    lateinit var multiScopeBindingActivityIntentCreator: MultiScopeBindingActivityIntentFactory
 
     private lateinit var binding: ActivityMainBinding
 
@@ -53,6 +57,11 @@ class MainActivity : AppCompatActivity(), DaggerComponentOwner {
 
         binding.sample.setOnClickListener {
             startActivity(Intent(this, SampleActivity::class.java))
+        }
+        
+        binding.multiscopeBinding.setOnClickListener { 
+            val intent = multiScopeBindingActivityIntentCreator.createIntent(this)
+            startActivity(intent)
         }
     }
 }
