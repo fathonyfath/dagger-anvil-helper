@@ -11,5 +11,5 @@ interface TimeProviderModule {
 
     @Singleton
     @Binds
-    fun SystemTimeProvider.binds(): TimeProvider
+    fun binds(instance: SystemTimeProvider): TimeProvider
 }
