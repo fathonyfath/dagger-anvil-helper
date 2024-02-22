@@ -8,12 +8,31 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import dev.fathony.anvil.helper.api.DefineMultipleEntryPoint
 import dev.fathony.anvil.helper.api.HasInjector
+import dev.fathony.di.scope.ChildFragmentScope
+import dev.fathony.di.scope.FragmentScope
+import dev.fathony.multiscopebinding.di.MultiScopeBindingActivityScope
 import dev.fathony.multiscopebinding.di.MultiScopeDeepLevelFragmentKey
+import dev.fathony.multiscopebinding.di.MultiScopeDeepLevelFragmentScope
 import dev.fathony.multiscopebinding.di.MultiScopeSurfaceLevelFragmentKey
+import dev.fathony.multiscopebinding.di.MultiScopeSurfaceLevelFragmentScope
+import dev.fathony.multiscopebinding.di.NestedFragmentScope
 import dev.fathony.multiscopebinding.message.MessageProvider
 import javax.inject.Inject
 
+@DefineMultipleEntryPoint(
+    daggerScope = FragmentScope::class,
+    key = MultiScopeSurfaceLevelFragmentKey::class,
+    scope = MultiScopeSurfaceLevelFragmentScope::class,
+    parentScope = MultiScopeBindingActivityScope::class
+)
+@DefineMultipleEntryPoint(
+    daggerScope = ChildFragmentScope::class,
+    key = MultiScopeDeepLevelFragmentKey::class,
+    scope = MultiScopeDeepLevelFragmentScope::class,
+    parentScope = NestedFragmentScope::class
+)
 class MultiScopeFragment : Fragment() {
 
     @Inject
