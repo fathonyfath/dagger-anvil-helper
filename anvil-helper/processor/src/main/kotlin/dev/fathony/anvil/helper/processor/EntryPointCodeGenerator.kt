@@ -10,6 +10,7 @@ import com.squareup.anvil.compiler.api.CodeGenerator
 import com.squareup.anvil.compiler.api.GeneratedFile
 import com.squareup.anvil.compiler.api.createGeneratedFile
 import com.squareup.anvil.compiler.internal.buildFile
+import com.squareup.anvil.compiler.internal.fqName
 import com.squareup.anvil.compiler.internal.reference.ClassReference
 import com.squareup.anvil.compiler.internal.reference.asClassName
 import com.squareup.anvil.compiler.internal.reference.classAndInnerClassReferences
@@ -79,6 +80,7 @@ class EntryPointCodeGenerator : CodeGenerator {
                 val daggerScope = clazz.annotations.first { it.isDaggerScope() }
                 val scope = defineEntryPointAnnotation.scope()
                 val parentScope: ClassReference? = defineEntryPointAnnotation.parentScopeOrNull()
+                    ?.let { if (it.fqName == Unit::class.fqName) null else it }
 
                 val factoryAnnotation = if (parentScope == null) {
                     Component.Factory::class
