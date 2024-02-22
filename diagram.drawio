@@ -1,0 +1,321 @@
+<mxfile host="app.diagrams.net" modified="2024-02-22T04:57:35.973Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="ylgC5AekC6R7AQxsjrGG" version="23.1.5" type="device">
+  <diagram name="dagger-diagram" id="sWhMhY0wR_OG51qnEb6M">
+    <mxGraphModel dx="4307" dy="3070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-128" value=":time-provider" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="510" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-92" value=":feature-b" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="365" y="510" width="630" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-103" value="FeatureBActivity" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="405" y="600" width="560" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-90" value=":app" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="-340" width="1420" height="810" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-31" value="MainActivity" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="970" y="80" width="380" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-29" value="MyApplication" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="140" y="-40" width="720" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-27" value="Subcomponents" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-16" target="TI75xwQb4ZW0oCLDovUv-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-40" value="Implements" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-38" target="TI75xwQb4ZW0oCLDovUv-36" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-6" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;ApplicationScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="-10" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-13" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-8" target="TI75xwQb4ZW0oCLDovUv-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-14" value="Collects" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="TI75xwQb4ZW0oCLDovUv-13" vertex="1" connectable="0">
+          <mxGeometry x="-0.1865" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-8" value="&lt;b&gt;DaggerComponent&lt;/b&gt;&lt;br&gt;ApplicationComponent" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="285" y="90" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-11" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;Singleton" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="390" y="-10" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-15" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-8" target="TI75xwQb4ZW0oCLDovUv-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-16" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;ApplicationModule" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="660" y="10" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-19" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-8" target="TI75xwQb4ZW0oCLDovUv-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-23" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="TI75xwQb4ZW0oCLDovUv-19" vertex="1" connectable="0">
+          <mxGeometry x="-0.1572" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-94" value="Includes" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-17" target="TI75xwQb4ZW0oCLDovUv-93" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-130" value="Includes" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-17" target="TI75xwQb4ZW0oCLDovUv-129" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-17" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;FeatureModule" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="650" y="130" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-8" target="TI75xwQb4ZW0oCLDovUv-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-24" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="TI75xwQb4ZW0oCLDovUv-20" vertex="1" connectable="0">
+          <mxGeometry x="-0.2123" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-18" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;MigrationModule&lt;br&gt;&lt;br&gt;(Additional intermediate layer to accomodate migration between old approach and new approach)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="170" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-8" target="TI75xwQb4ZW0oCLDovUv-18" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-25" value="Includes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" parent="TI75xwQb4ZW0oCLDovUv-22" vertex="1" connectable="0">
+          <mxGeometry x="0.1766" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-101" value="Implements" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-38" target="TI75xwQb4ZW0oCLDovUv-96" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-38" value="MyApplicationDaggerComponent&lt;br&gt;&lt;br&gt;(A class that implements all the factories from the old approach, this is done because with Anvil, ApplicationComponent have to be an interface)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="320" y="310" width="320" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-39" value="Provides" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-18" target="TI75xwQb4ZW0oCLDovUv-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-26" value="&lt;b&gt;DaggerSubcomponent&lt;/b&gt;&lt;br&gt;MainActivityComponent" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="200" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-28" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;ActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-30" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-26" target="TI75xwQb4ZW0oCLDovUv-28" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-37" value="Creates" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-36" target="TI75xwQb4ZW0oCLDovUv-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-36" value="MainActivityComponentFactory" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="290" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-99" value="Subcomponents" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-93" target="TI75xwQb4ZW0oCLDovUv-95" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-93" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;FeatureBModule" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="670" y="530" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-98" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-95" target="TI75xwQb4ZW0oCLDovUv-97" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-95" value="&lt;b&gt;DaggerSubcomponent&lt;/b&gt;&lt;br&gt;FeatureBActivityComponent" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="592.5" y="740" width="175" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-100" value="Creates" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-96" target="TI75xwQb4ZW0oCLDovUv-95" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-96" value="FeatureBActivityComponentFactory" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="445" y="640" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-97" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;ActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="795" y="660" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-105" value="SampleActivity" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="170" y="-310" width="410" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-110" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;SampleActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="-280" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-113" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-112" target="TI75xwQb4ZW0oCLDovUv-110" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-114" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-112" target="TI75xwQb4ZW0oCLDovUv-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-117" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-112" target="TI75xwQb4ZW0oCLDovUv-116" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-112" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="-190" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-115" value="SampleFragment" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="620" y="-255" width="350" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-116" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;ActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="220" y="-280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-118" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;SampleFragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="795" y="-230" width="152.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-120" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-119" target="TI75xwQb4ZW0oCLDovUv-112" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-121" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-119" target="TI75xwQb4ZW0oCLDovUv-118" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-124" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-119" target="TI75xwQb4ZW0oCLDovUv-122" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-119" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="740" y="-150" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-122" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;FragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="642.5" y="-225" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-125" value=":feature-a" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" parent="1" vertex="1">
+          <mxGeometry x="-340" y="-185" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-127" value="Contributes to" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" parent="1" source="TI75xwQb4ZW0oCLDovUv-126" target="TI75xwQb4ZW0oCLDovUv-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-126" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;FeatureAModule" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-320" y="-150" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TI75xwQb4ZW0oCLDovUv-129" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;TimeProviderModule" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="545" width="125" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-1" value=":feature-counter" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="-50" width="530" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-3" value="Contributes to" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-2" target="TI75xwQb4ZW0oCLDovUv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-2" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;FeatureCounterModule" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-227.5" y="-40" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-5" value="FeatureCounterFragment" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="10" width="472.5" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-7" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-4" target="qtHMvGRXEjtA1fMSCM2s-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-9" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-4" target="qtHMvGRXEjtA1fMSCM2s-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-10" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-4" target="TI75xwQb4ZW0oCLDovUv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-4" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-302.5" y="40" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-6" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;FeatureCounterFragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-302.5" y="130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-8" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;FragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-522.5" y="45" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-12" value="Contributes to" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-11" target="qtHMvGRXEjtA1fMSCM2s-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-14" value="Provides" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-11" target="qtHMvGRXEjtA1fMSCM2s-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-11" value="&lt;b&gt;DaggerModule&lt;/b&gt;&lt;br&gt;FeatureCounterFragmentModule" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="210" width="217.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-13" value="FeatureCounterViewModel&lt;br&gt;&lt;br&gt;(Since &lt;b&gt;@EntryPoint&amp;nbsp;&lt;/b&gt;binds the instance of the related class, in this example we can use instance of FeatureCounterFragment when creating the ViewModel)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="290" width="390" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-15" value=":multiscope-binding" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="-850" width="1550" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-16" value="MultiScopeBindingActivity" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="-580" width="460" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-17" value="MultiScopeFragment" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="95" y="-755" width="710" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-18" value="NestedFragment" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;spacing=0;spacingLeft=8;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="-550" y="-810" width="450" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-23" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-19" target="qtHMvGRXEjtA1fMSCM2s-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-24" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-19" target="qtHMvGRXEjtA1fMSCM2s-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-25" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-19" target="TI75xwQb4ZW0oCLDovUv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-19" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="-540" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-21" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;MultiScopeBindingActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-522.5" y="-450" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-22" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;ActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="-550" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-26" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;FragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="-710" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-28" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-27" target="qtHMvGRXEjtA1fMSCM2s-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-29" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-27" target="qtHMvGRXEjtA1fMSCM2s-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-31" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-27" target="qtHMvGRXEjtA1fMSCM2s-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-27" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="-715" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-30" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;MultiScopeBindingActivityScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-360" y="-795" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-34" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-32" target="qtHMvGRXEjtA1fMSCM2s-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-38" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-32" target="qtHMvGRXEjtA1fMSCM2s-37">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-44" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-32" target="qtHMvGRXEjtA1fMSCM2s-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-32" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent with custom key &lt;b&gt;MultiScopeSurfaceLevelFragmentKey&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="124.38" y="-540" width="230.62" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-35" value="Register as Subcomponent of" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-33" target="qtHMvGRXEjtA1fMSCM2s-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-40" value="Scoped with" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-33" target="qtHMvGRXEjtA1fMSCM2s-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-43" value="Collects" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="qtHMvGRXEjtA1fMSCM2s-33" target="qtHMvGRXEjtA1fMSCM2s-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-33" value="&lt;b&gt;@EntryPoint&lt;br&gt;&lt;/b&gt;Generate Dagger Subcomponent with custom key &lt;b&gt;MultiScopeDeepLevelFragmentKey&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="124.38" y="-665" width="230.62" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-37" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;FragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="513.75" y="-570" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-39" value="&lt;b&gt;DaggerScope&lt;/b&gt;&lt;br&gt;ChildFragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="496.25" y="-720" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-41" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;MultiScopeDeepLevelFragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="515" y="-665" width="247.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-42" value="&lt;b&gt;AnvilScope&lt;/b&gt;&lt;br&gt;MultiScopeSurfaceLevelFragmentScope" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="-500" width="247.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qtHMvGRXEjtA1fMSCM2s-45" value="In this case, if we want to inject a shared interface with different implementations depending on where it is injected, we can do that by providing different instance to different &lt;b&gt;AnvilScope&lt;/b&gt;." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;spacingTop=16;" vertex="1" parent="1">
+          <mxGeometry x="645" y="-840" width="255" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
