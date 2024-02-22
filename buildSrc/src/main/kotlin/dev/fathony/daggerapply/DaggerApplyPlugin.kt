@@ -76,7 +76,7 @@ class DaggerApplyPlugin : Plugin<Project> {
     }
 
     private companion object {
-        const val DAGGER_VERSION = "2.48"
+        const val DAGGER_VERSION = "2.50"
     }
 }
 
