@@ -25,7 +25,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DaggerKSP Anvil Interaction"
+rootProject.name = "Dagger Anvil Helper"
 include(":app")
 include(":di-interface")
 include(":feature-a-interface")

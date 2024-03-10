@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="DaggerKSP_Anvil_Interaction.app" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.buildSrc" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.buildSrc.main" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.buildSrc.test" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.di-interface" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.feature-a" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.feature-b" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.feature-b-interface" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.feature-counter" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.feature-counter-interface" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.multiscope-binding" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.multiscope-binding-interface" target="17" />
+      <module name="DaggerKSP_Anvil_Interaction.viewmodel-factory" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
