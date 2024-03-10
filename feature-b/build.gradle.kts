@@ -48,6 +48,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.activityKtx)
     implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintLayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.espresso)

@@ -10,7 +10,7 @@ plugins {
 apply<DaggerApplyPlugin>()
 
 android {
-    namespace = "dev.fathony.featureb"
+    namespace = "dev.fathony.featurecounter"
     compileSdk = 33
 
     defaultConfig {

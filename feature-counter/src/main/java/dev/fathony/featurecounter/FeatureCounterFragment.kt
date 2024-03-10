@@ -12,7 +12,7 @@ import dev.fathony.anvil.helper.api.DefineEntryPoint
 import dev.fathony.anvil.helper.api.HasInjector
 import dev.fathony.commonscopes.ApplicationScope
 import dev.fathony.di.scope.FragmentScope
-import dev.fathony.featureb.R
+import dev.fathony.featurecounter.R
 import dev.fathony.featurecounter.di.FeatureCounterFragmentScope
 import javax.inject.Inject
 

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.fathony.featureb.contract"
+    namespace = "dev.fathony.featurecounter.contract"
     compileSdk = 33
 
     defaultConfig {
